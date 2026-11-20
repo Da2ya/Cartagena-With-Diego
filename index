@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartagena With Diego | Luxury Concierge & VIP Rentals</title>
+    <!-- FontAwesome & Google Fonts (Montserrat) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar Principal -->
+    <header class="navbar" id="navbar">
+        <div class="logo-container">
+            <img src="Logo With.jpg" alt="Cartagena With Diego Logo" class="brand-logo">
+        </div>
+        <div class="nav-controls">
+            <a href="https://instagram.com" target="_blank" class="social-icon-btn" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <button class="lang-btn" onclick="toggleLanguage()" aria-label="Toggle Language">
+                <i class="fas fa-globe"></i> <span id="lang-label">ES</span>
+            </button>
+            <button class="menu-btn" onclick="toggleNavMenu()" aria-label="Open Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menú Desplegable Overlay -->
+    <nav id="nav-overlay" class="nav-overlay">
+        <button class="close-menu-btn" onclick="toggleNavMenu()">&times;</button>
+        <ul class="overlay-menu-list">
+            <li><a href="#" onclick="openCategoryModal('speedboats'); toggleNavMenu();" data-es="Speedboats" data-en="Speedboats">Speedboats</a></li>
+            <li><a href="#" onclick="openCategoryModal('yachts'); toggleNavMenu();" data-es="Yachts" data-en="Yachts">Yachts</a></li>
+            <li><a href="#" onclick="openCategoryModal('catamarans'); toggleNavMenu();" data-es="Catamarans" data-en="Catamarans">Catamarans</a></li>
+            <li><a href="#" onclick="openCategoryModal('accommodations'); toggleNavMenu();" data-es="Accommodations" data-en="Accommodations">Accommodations</a></li>
+            <li><a href="#" onclick="openCategoryModal('beachclubs'); toggleNavMenu();" data-es="Beach Clubs" data-en="Beach Clubs">Beach Clubs</a></li>
+            <li><a href="#" onclick="openCategoryModal('excursions'); toggleNavMenu();" data-es="Excursions & Tours" data-en="Excursions & Tours">Excursions & Tours</a></li>
+            <li><a href="#" onclick="openCategoryModal('chef'); toggleNavMenu();" data-es="Private Chef" data-en="Private Chef">Private Chef</a></li>
+        </ul>
+    </nav>
+
+    <!-- 1. PORTADA -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">CARTAGENA WITH DIEGO</h1>
+            <span class="hero-subtitle" data-es="EXCLUSIVE CARIBBEAN EXPERIENCES" data-en="EXCLUSIVE CARIBBEAN EXPERIENCES">EXCLUSIVE CARIBBEAN EXPERIENCES</span>
+        </div>
+    </section>
+
+    <!-- 2. BIOGRAFÍA DE DIEGO -->
+    <section class="bio-section">
+        <div class="bio-container">
+            <h3 data-es="ABOUT ME – DIEGO" data-en="ABOUT ME – DIEGO">ABOUT ME – DIEGO</h3>
+            <p class="bio-tagline" data-es="Tu amigo local y Concierge Privado en Cartagena" data-en="Your Local Friend & Private Concierge in Cartagena">Your Local Friend & Private Concierge in Cartagena</p>
+            <p class="bio-text" data-es="¡Hola! Soy Diego. Llevo 24 años viviendo en Cartagena y cuento con más de dos años de experiencia ofreciendo atención VIP personalizada. Mi compromiso es brindarte transparencia, honestidad y cuidar cada detalle para que disfrutes de las mejores playas, yates y gastronomía con tranquilidad absoluta. ¡Hagamos memorables tus vacaciones!" data-en="Hi! My name is Diego. Cartagena has been my home for 24 years, and with over two years of concierge experience, my mission is to share the true beauty of my city. Built on honesty and transparent advice, I take care of every detail—from private boats to top gastronomy—so you can enjoy an unforgettable trip. Let's make great memories together!">Hi! My name is Diego. Cartagena has been my home for 24 years, and with over two years of concierge experience, my mission is to share the true beauty of my city. Built on honesty and transparent advice, I take care of every detail—from private boats to top gastronomy—so you can enjoy an unforgettable trip. Let's make great memories together!</p>
+        </div>
+    </section>
+
+    <!-- 3. LO QUE PUEDO ORGANIZAR PARA TI -->
+    <div class="arrange-section-header">
+        <h2 data-es="Lo que puedo organizar para ti" data-en="What I can arrange for you">What I can arrange for you</h2>
+        <div class="gold-divider"></div>
+    </div>
+
+    <!-- 4. ACTIVIDADES (INICIO) -->
+    <main class="home-categories-container">
+        
+        <!-- Speedboats -->
+        <article class="category-preview-card">
+            <div class="card-image-box">
+                <img src="CASA BARU 1.jpeg" alt="Speedboats Rental Cartagena" loading="lazy">
+            </div>
+            <div class="card-info-box">
+                <h3 data-es="Speedboats" data-en="Speedboats">Speedboats</h3>
+                <p data-es="Botes deportivos de 25ft a 39ft equipados con sonido bluetooth, baño y capitán." data-en="Sport boats from 25ft to 39ft equipped with bluetooth sound, bathroom, and captain.">Sport boats from 25ft to 39ft equipped with bluetooth sound, bathroom, and captain.</p>
+                <button class="btn-more-here" onclick="openCategoryModal('speedboats')" data-es="More here ↓" data-en="More here ↓">More here ↓</button>
+            </div>
+        </article>
+
+        <!-- Yachts -->
+        <article class="category-preview-card">
+            <div class="card-image-box">
+                <img src="blackfirpol_1.jpg" alt="Luxury Yachts Cartagena" loading="lazy">
+            </div>
+            <div class="card-info-box">
+                <h3 data-es="Yachts" data-en="Yachts">Yachts</h3>
+                <p data-es="Yates de lujo exclusivos para navegar por las Islas del Rosario con máximo confort." data-en="Exclusive luxury yachts to navigate the Rosario Islands with maximum comfort.">Exclusive luxury yachts to navigate the Rosario Islands with maximum comfort.</p>
+                <button class="btn-more-here" onclick="openCategoryModal('yachts')" data-es="More here ↓" data-en="More here ↓">More here ↓</button>
+            </div>
+        </article>
+
+        <!-- Catamarans -->
+        <article class="category-preview-card">
+            <div class="card-image-box">
+                <img src="marianas4_1.jpg" alt="Catamarans Cartagena" loading="lazy">
+            </div>
+            <div class="card-info-box">
+                <h3 data-es="Catamarans" data-en="Catamarans">Catamarans</h3>
+                <p data-es="Catamaranes espaciosos ideales para grupos grandes, eventos privados y sunsets." data-en="Spacious catamarans ideal for large groups, private events, and sunset cruises.">Spacious catamarans ideal for large groups, private events, and sunset cruises.</p>
+                <button class="btn-more-here" onclick="openCategoryModal('catamarans')" data-es="More here ↓" data-en="More here ↓">More here ↓</button>
+            </div>
+        </article>
+
+        <!-- Accommodations -->
+        <article class="category-preview-card">
+            <div class="card-image-box">
+                <img src="cartagena.jpg" alt="Luxury Accommodations Cartagena" loading="lazy">
+            </div>
+            <div class="card-info-box">
+                <h3 data-es="Accommodations" data-en="Accommodations">Accommodations</h3>
+                <p data-es="Villas exclusivas y apartamentos de lujo ubicados en el Centro Histórico y Barú." data-en="Exclusive villas and luxury apartments located in the Historic Center and Barú.">Exclusive villas and luxury apartments located in the Historic Center and Barú.</p>
+                <button class="btn-more-here" onclick="openCategoryModal('accommodations')" data-es="More here ↓" data-en="More here ↓">More here ↓</button>
+            </div>
+        </article>
+
+        <!-- Beach Clubs -->
+        <article class="category-preview-card">
+            <div class="card-image-box">
+                <img src="isla baru.jpg" alt="Beach Clubs Cartagena" loading="lazy">
+            </div>
+            <div class="card-info-box">
+                <h3 data-es="Beach Clubs" data-en="Beach Clubs">Beach Clubs</h3>
+                <p data-es="Acceso VIP reservado a los mejores clubes de playa en Islas del Rosario y Barú." data-en="Reserved VIP access to the finest beach clubs in Rosario Islands and Barú.">Reserved VIP access to the finest beach clubs in Rosario Islands and Barú.</p>
+                <button class="btn-more-here" onclick="openCategoryModal('beachclubs')" data-es="More here ↓" data-en="More here ↓">More here ↓</button>
+            </div>
+        </article>
+
+        <!-- Excursions & Tours -->
+        <article class="category-preview-card">
+            <div class="card-image-box">
+                <img src="marianas2_1.jpg" alt="Excursions and Tours Cartagena" loading="lazy">
+            </div>
+            <div class="card-info-box">
+                <h3 data-es="Excursions & Tours" data-en="Excursions & Tours">Excursions & Tours</h3>
+                <p data-es="ATV Safari, Palenque cultural, Playa Tranquila y Tierra Bomba." data-en="ATV Quad Safari, Palenque cultural tour, Playa Tranquila, and Tierra Bomba.">ATV Quad Safari, Palenque cultural tour, Playa Tranquila, and Tierra Bomba.</p>
+                <button class="btn-more-here" onclick="openCategoryModal('excursions')" data-es="More here ↓" data-en="More here ↓">More here ↓</button>
+            </div>
+        </article>
+
+        <!-- Private Chef -->
+        <article class="category-preview-card">
+            <div class="card-image-box">
+                <img src="cartagena.jpg" alt="Private Chef Experience Cartagena" loading="lazy">
+            </div>
+            <div class="card-info-box">
+                <h3 data-es="Private Chef" data-en="Private Chef">Private Chef</h3>
+                <p data-es="Experiencia gastronómica exclusiva con chef privado en tu villa o yate." data-en="Exclusive culinary experience with a private chef at your villa or yacht.">Exclusive culinary experience with a private chef at your villa or yacht.</p>
+                <button class="btn-more-here" onclick="openCategoryModal('chef')" data-es="More here ↓" data-en="More here ↓">More here ↓</button>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Modal Dinámico de Catálogo -->
+    <div id="category-modal" class="category-modal" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-category-title">Catalog</h3>
+                <button class="close-modal-btn" onclick="closeCategoryModal()" aria-label="Close modal">&times;</button>
+            </div>
+            <div id="modal-items-container" class="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Footer Corporativo -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Cartagena With Diego. All rights reserved.</p>
+        <span data-es="Diseñado para la excelencia global" data-en="Designed for global excellence">Designed for global excellence</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
